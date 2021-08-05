@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+</head>
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-weight: 400;
+      color: #454545;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    div.container-large {
+      width: 100%;
+      padding: 40px;
+      margin: 10px auto;
+      overflow-x: auto;
+    }
+    
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+    }
+    
+    table td, table th {
+      border: 1px solid #dedede;
+      padding: 5px 10px;
+    }
+    
+    table th {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    
+    table tr:hover {
+      background-color: rgb(236, 236, 236);
+    }
+    
+    table th {
+      text-align: left;
+      border-bottom: 2px solid #45454555;
+      font-weight: 600;
+    }
+    
+    tr > td {
+      word-wrap: break-word;
+      white-space: wrap;
+    }
+  </style>
+
+  <div class="container-large">
+    <table>
+      <thead>
+        <% header.forEach(col => {%>
+          <th><%= col.trim() %></th>
+        <%}) %>
+      </thead>
+
+      <tbody>
+        <% rows.forEach(row => {%>
+          <tr>
+            <% row.forEach(item => {%>
+              <td><%= item.trim() %></td>
+            <%}) %>
+          </tr>
+        <%}) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
