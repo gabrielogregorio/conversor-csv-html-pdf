@@ -24,7 +24,7 @@ Projeto realizado a partir da formação nodejs cujo objetivo é um sistema de c
 
 ### Capturas de telas
 Arquivo PDF gerado. O estilo foi adicionado diretamente no arquivo de modelo em 'src/models/table.ejs'.
-![Arquivo PDF gerado](images/1.png);
+![Arquivo PDF gerado](images/1.png)
 
 Arquivo HTML gerado
-![Arquivo PDF gerado](images/2.png);
+![Arquivo PDF gerado](images/2.png)
